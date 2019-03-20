@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Esri Dev Summit 2019 - Presentation - Renardi Tanuwidjaja</title>
+
+    <link rel="stylesheet" href="../../libs/reveal.js/css/reveal.css" />
+    <link rel="stylesheet" href="../../libs/reveal.js/css/theme/arup.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../../libs/reveal.js/lib/css/zenburn.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "../../libs/reveal.js/css/print/pdf.css"
+        : "../../libs/reveal.js/css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="index.md"
+          data-separator="^\r?\n---\r?\n"
+          data-separator-vertical="^\r?\n------\r?\n"
+          data-background="assets/images/bg-1-arup-white.png"
+        ></section>
+      </div>
+    </div>
+
+    <script src="../../libs/reveal.js/lib/js/head.min.js"></script>
+    <script src="../../libs/reveal.js/js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "../../libs/reveal.js/plugin/markdown/marked.js" },
+          { src: "../../libs/reveal.js/plugin/markdown/markdown.js" },
+          { src: "../../libs/reveal.js/plugin/notes/notes.js", async: true },
+          {
+            src: "../../libs/reveal.js/plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>

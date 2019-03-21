@@ -1,6 +1,6 @@
 # Building a React App with react-arcgis and ArcGIS JavaScript API
 
-[Preview presentation](https://renarditanuwidjaja.github.io/rt-esridevsummit2019/slides/notes)
+[Preview presentation](https://renarditanuwidjaja.github.io/rt-esridevsummit2019/slides/rt-presentation/index.html)
 
 Presented by Renardi Tanuwidjaja (Arup) at [Esri Developer Summit](https://devsummit2019.schedule.esri.com/schedule/448026045) on 6 March 2019
 

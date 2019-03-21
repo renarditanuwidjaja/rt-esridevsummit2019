@@ -2,7 +2,7 @@
 
 ## Summary Notes
 
-[Preview presentation](https://renarditanuwidjaja.github.io/rt-esridevsummit2019/slides/notes)
+[Preview presentation](https://renarditanuwidjaja.github.io/rt-esridevsummit2019/slides/notes/index.html)
 
 A compilation of notes taken by Renardi Tanuwidjaja and Yijun Tay during the Esri Developer Summit 2019 in Palm Springs. Credits to Esri for examples presented in the Summit.
 
@@ -10,7 +10,7 @@ A compilation of notes taken by Renardi Tanuwidjaja and Yijun Tay during the Esr
 
 ## Building a React App with react-arcgis and ArcGIS JavaScript API
 
-[Preview presentation](https://renarditanuwidjaja.github.io/rt-esridevsummit2019/slides/notes)
+[Preview presentation](https://renarditanuwidjaja.github.io/rt-esridevsummit2019/slides/rt-presentation/index.html)
 
 Presented by Renardi Tanuwidjaja (Arup) at [Esri Developer Summit](https://devsummit2019.schedule.esri.com/schedule/448026045) on 6 March 2019
 

@@ -217,6 +217,54 @@ featureLayerView.filter()
 
 ------
 
+### Recommendations for Performance - Apps
+
+- Lazy load
+- Use fewer map layers
+- Specify outfields in feature layers
+- Simplify rendering
+- Use Web Workers API to load resources later
+
+------
+
+### Recommendations for Performance - Scenes
+
+- Publish Scene Layers with ArcGIS Pro 2.3
+    - Oriented bounding boxes instead of spherical extents
+- Use tilt constraints
+    - More tilt = more to load
+```
+view.constraints.tilt.max = 50
+```
+
+------
+
+### Recommendations for Performance - Scenes (cont)
+
+- Absolute height loads faster than relative height
+- Apply lower quality profile for atmosphere effects
+```
+const view = new sceneView({
+    qualityProfile: "low"
+});
+view.environment.atmosphere.quality = "low";
+```
+
+------
+
+### Recommendations for Performance - Scenes (cont)
+
+- Avoid shadows if not necessary
+```
+view.environment.lighting.directShadowsEnabled = false;
+```
+- Avoid ambient occulusion 
+```
+view.environment.lighting.ambientOcclusionEnabled = false;
+```
+
+------
+
 ## JS API - The Road Ahead
 
 ------
@@ -389,6 +437,23 @@ lyr.setCIM(cim_lyr)
 - The DCRA in Alaska has a story map for each of its 347 communities
 - Created an example of automation using the Python API and the new Story Maps module
 - Code on GitHub: http://p.ctx.ly/r/974m
+
+------
+
+### Building Geoprocessing Tools
+
+- Validation 
+- Code organisation
+    - Python toolboxes vs Script tools
+- Debugging Python in Pro using Visual Studio
+- Toolboxes as Packages
+- Publishing Geoprocessing Services
+
+------
+
+### Building Geoprocessing Tools
+
+- Slides: https://github.com/dWynne1/ds19-building-tools
 
 ---
 
@@ -621,6 +686,8 @@ Named user login vs app login
 - Ability to publish to ArcGIS Server in future release
 - Option to cache locally for scene layers, vector and raster tiles
 - Integration with AutoDesk
+- Cut and fill tool (under development)
+- Profile viewing tool (under development)
 
 ------
 
@@ -647,9 +714,25 @@ Named user login vs app login
 
 ### Experience Builder
 
-- Future of Web AppBuilder
+- New Product! 
+- Card-based website builder
 
 <img src="assets/images/arcgis_experience.jpg" height="500px" style="border: none; box-shadow: none;">
+
+------
+
+### Developer Knwowledge
+
+- Running React under the hood
+- Skills needed for development - React + TypeScript
+
+------
+
+### Product Timeline
+
+- June 2019 - Beta Release (Developer Edition and Online Edition)
+- Q4 2019 - Final Release (Developer Edition and Online Edition)
+- Early 2020 - Final Release (Enterprise Edition)
 
 ---
 
